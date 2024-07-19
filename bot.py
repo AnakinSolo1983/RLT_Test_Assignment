@@ -20,6 +20,8 @@ dispatch = Dispatcher()
 async def start(message: types.Message):
     
     user_name = message.from_user.first_name
+    user_name += ' '
+    user_name += message.from_user.last_name
     await message.answer(f"Добро пожаловать, {user_name}. Этот бот принимает от пользователей текстовые сообщения содержащие JSON с входными данными для агрегации статистических данных о зарплатах сотрудников компании по временным промежуткам, и возвращает агрегированные данные в ответ.")
 
 
