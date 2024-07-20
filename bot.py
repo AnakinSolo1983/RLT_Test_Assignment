@@ -9,7 +9,7 @@ import json
 #-------
 
 # Setting up the Telegram bot using a provided token.
-BOT_TOKEN = "7380601795:AAFLzkUW35xXpsVlVD3Rvg5hXmTZ_88jZ_0"
+BOT_TOKEN = "confidential"
 bot = Bot(BOT_TOKEN)
 dispatch = Dispatcher()
 
