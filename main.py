@@ -79,5 +79,5 @@ async def aggregate_data(dt_from,dt_upto,group_type):
             current = current.replace(day=1) + datetime.timedelta(days=32)
             current = current.replace(day=1)
 
-    output = {"datasets": result_data, "labels": result_labels}
+    output = {"dataset": result_data, "labels": result_labels}
     return output
